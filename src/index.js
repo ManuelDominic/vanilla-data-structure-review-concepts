@@ -37,9 +37,6 @@ const selectionSort = arr =>{
   return arr
 }
 
-let left = [];
-let right = [];
-
 const merger = (left, right) => {
   const arr = [];
   while(left.length && right.length) {
