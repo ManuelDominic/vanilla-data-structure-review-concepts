@@ -37,26 +37,31 @@ const selectionSort = arr =>{
   return arr
 }
 
+let left = [];
+let right = [];
 
-// const merger = (left, right) => {
-//   const arr = [];
-//   while(left.length && right.length) {
-//       if (left[0] < right[0]) {
-//           arr.push( left.shift() )
-//       } else {
-//           arr.push( right.shift() )
-//       }
-//   }
-//   return [ ...arr, ...left, ...right ];
-// }
+const merger = (left, right) => {
+  const arr = [];
+  while(left.length && right.length) {
+      if (left[0] < right[0]) {
+          arr.push( left.shift() )
+      } else {
+          arr.push( right.shift() )
+      }
+  }
+  return arr;
+}
 
 const ArrayList = [9, 0, 5, 7, 1, 3, 7];
+const ArrayList1 = [4, 0, 5, 0];
+const ArrayList2 = [7, 1, 3, 3];
 const sort1 = bubbleSort(ArrayList);
 const sort2 = selectionSort(ArrayList);
-// const sort3 = merger(ArrayList);
+const sort3 = merger(ArrayList1, ArrayList2);
 
 console.log(sort1);
 console.log(sort2);
+console.log(sort3);
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
