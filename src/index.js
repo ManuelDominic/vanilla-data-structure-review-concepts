@@ -27,7 +27,6 @@ const selectionSort = arr =>{
               min = j;
           }
       }
-
       if (i !== min) {
           let temp = arr[ i ];
           arr[ i ] = arr[min];
@@ -63,6 +62,7 @@ console.log(sort3);
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
 <div>
-  This is my home test with vanilla js
+  Emmanuel is taking care of you at mastery!!,
+  So don't worry!!!
 </div>
 `;
